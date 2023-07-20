@@ -7,3 +7,15 @@ Pelicula::Pelicula(string idV1, string nombre1, string duracion1, string genero1
     genero = genero1;
     calificacion = calificacion1;
 }
+
+void Pelicula::allVideos(){
+    //
+}
+
+void Pelicula::showEp(string nomS){
+    //
+}
+
+void Pelicula::showPeli(){
+    //
+}
