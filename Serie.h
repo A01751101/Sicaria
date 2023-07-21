@@ -5,18 +5,13 @@
 using std::vector;
 using std::string;
 #include "Video.h";
-#include "Episodio.h";
-#include "Contenido.h";
 
-class Serie: public Video, public Contenido{
+class Serie: public Video{
     private:
-        vector<Episodio*> episodios;
+        int cantEps;
     public:
-        Serie(string idV1, string nombre1, string duracion1, string genero1, float calificacion1);
-        void allVideos();
-        void showEp(string nomS);
-        void showPeli();
-        void addEp(Episodio ep);
+        Serie(string idV1, string nombre1, string duracion1, string genero1, float calificacion1, int cantEps1);
+        void muestraDatos();
 };
 
 #endif

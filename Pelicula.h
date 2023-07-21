@@ -4,14 +4,11 @@
 #include <iostream>;
 using std::string;
 #include "Video.h";
-#include "Contenido.h";
 
-class Pelicula: public Video, public Contenido{
+class Pelicula: public Video{
     public:
         Pelicula(string idV1, string nombre1, string duracion1, string genero1, float calificacion1);
-        void allVideos();
-        void showEp(string nomS);
-        void showPeli();
+        void muestraDatos();
 };
 
 #endif

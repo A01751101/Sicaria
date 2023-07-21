@@ -3,6 +3,8 @@
 
 #include <iostream>;
 #include "Video.h";
+#include "Pelicula.h";
+#include "Serie.h"
 using std::vector;
 
 class Catalogo{
@@ -11,10 +13,6 @@ class Catalogo{
     
     public:
         Catalogo();
-        void allVideos();
-        void showEp(string nomS);
-        void showPeli();
-        void addConte(Video vid);
 };
 
 #endif
