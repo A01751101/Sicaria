@@ -1,10 +1,10 @@
 #ifndef SERIE_H
 #define SERIE_H
 
-#include <iostream>;
+#include <iostream>
 using std::vector;
 using std::string;
-#include "Video.h";
+#include "Video.h"
 
 class Serie: public Video{
     private:

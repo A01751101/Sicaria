@@ -1,9 +1,9 @@
 #ifndef CATALOGO_H
 #define CATALOGO_H
 
-#include <iostream>;
-#include "Video.h";
-#include "Pelicula.h";
+#include <iostream>
+#include "Video.h"
+#include "Pelicula.h"
 #include "Serie.h"
 using std::vector;
 

@@ -1,9 +1,9 @@
 #ifndef PELICULA_H
 #define PELICULA_H
 
-#include <iostream>;
+#include <iostream>
 using std::string;
-#include "Video.h";
+#include "Video.h"
 
 class Pelicula: public Video{
     public:

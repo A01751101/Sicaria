@@ -1,4 +1,4 @@
-#include "Pelicula.h";
+#include "Pelicula.h"
 using std::cout;
 using std::endl;
 
