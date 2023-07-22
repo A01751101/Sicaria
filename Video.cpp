@@ -17,3 +17,15 @@ void Video::muestraDatos(){
     cout << "Genero: " << genero << endl;
     cout << "Calificacion: " << calificacion << endl;
 }
+
+string Video::getNombre(){
+    return nombre;
+}
+
+float Video::getCalif(){
+    return calificacion;
+}
+
+void Video::setCalif(float calif1){
+    calificacion = (calificacion+calif1)/2;
+}

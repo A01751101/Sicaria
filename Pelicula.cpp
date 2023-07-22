@@ -14,3 +14,15 @@ void Pelicula::muestraDatos(){
     cout << "----- Película -----" << endl;
     Video::muestraDatos();
 }
+
+string Pelicula::getNombre(){
+    return nombre;
+}
+
+float Pelicula::getCalif(){
+    return calificacion;
+}
+
+void Pelicula::setCalif(float calif1){
+    calificacion = (calificacion+calif1)/2;
+}

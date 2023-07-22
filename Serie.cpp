@@ -1,4 +1,4 @@
-#include "Serie.h";
+#include "Serie.h"
 using std::cout;
 using std::endl;
 
@@ -15,4 +15,16 @@ void Serie::muestraDatos(){
     cout << "----- Serie -----" << endl;
     Video::muestraDatos();
     cout << "Cantidad de episodios: " << cantEps << endl;
+}
+
+string Serie::getNombre(){
+    return nombre;
+}
+
+float Serie::getCalif(){
+    return calificacion;
+}
+
+void Serie::setCalif(float calif1){
+    calificacion = (calificacion+calif1)/2;
 }
