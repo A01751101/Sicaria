@@ -21,22 +21,35 @@ Catalogo::Catalogo(){
     videos.push_back(&serie2);
 
      // Mostrar el reporte de objetos
-    string usrinput;
-    cout<<"Ingrese el nombre del video que desea buscar:"<<endl;
-    cout<<"BARBIE"<<endl<<"EL Cascanueces"<<endl<<"Avengers"<<endl<<"Pocoyo"<<endl<<"Breaking bad"<<endl<<endl;
-    cin>>usrinput;
-    for (const auto& video : videos) {
-        if (usrinput.compare(video->getNombre()) == 0)
-        {
-            cout << endl;
-            video->muestraDatos();
-            cout << endl;
-            float calif;
-            cout<<"Ingrese la calificación que desea darle del 1-5:"<<endl;
-            cin>>calif;
-            video->setCalif(calif);
-            cout<<endl;
-            video->muestraDatos();
+    int opcion;
+    cout<<"Para ver peliculas escriba 1. Para calificar un video escriba 2."<<endl;
+    cin>>opcion;
+
+    if (opcion == 1)
+    {
+        for (const auto& video : videos){
+            cout<<video->getNombre()<<endl;
+        }
+    }
+    else if (opcion == 2)
+    {
+        string usrinput;
+        cout<<"Ingrese el nombre del video que desea buscar:"<<endl;
+        cout<<"BARBIE"<<endl<<"EL Cascanueces"<<endl<<"Avengers"<<endl<<"Pocoyo"<<endl<<"Breaking bad"<<endl<<endl;
+        cin>>usrinput;
+        for (const auto& video : videos) {
+            if (usrinput.compare(video->getNombre()) == 0)
+            {
+                cout << endl;
+                video->muestraDatos();
+                cout << endl;
+                float calif;
+                cout<<"Ingrese la calificación que desea darle del 1-5:"<<endl;
+                cin>>calif;
+                video->setCalif(calif);
+                cout<<endl;
+                video->muestraDatos();
+            }
         }
     }
 }
